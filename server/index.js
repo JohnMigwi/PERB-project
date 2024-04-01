@@ -11,6 +11,16 @@ app.use(express.json());
 //ROUTES
 
 //create a todo
+app.post('./todos', async(req,res) =>{
+    try {
+
+        console.log(req.body);
+        
+    } catch (error) {
+        console.log(error.message);
+    }
+
+});
 
 
 //get all todo
