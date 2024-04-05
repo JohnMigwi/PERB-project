@@ -69,6 +69,7 @@ app.put('/todos/:id', async (req, res) => {
     }
 });
 
+<<<<<<< HEAD
 // Delete a todo
 app.delete('/todos/:id', async (req, res) => {
     try {
@@ -87,6 +88,9 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const pool = require('./db');
+=======
+//Update a todo
+>>>>>>> parent of 95c00c0 (put)
 
 // Middleware
 app.use(cors());
