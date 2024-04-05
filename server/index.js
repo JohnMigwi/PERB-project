@@ -1,9 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const pool = require('./db')
+const pool = require('./db');
 
-<<<<<<< HEAD
 
 const PORT = 5000;
 app.listen(PORT, () => {
@@ -70,7 +69,6 @@ app.put('/todos/:id', async (req, res) => {
     }
 });
 
-<<<<<<< HEAD
 // Delete a todo
 app.delete('/todos/:id', async (req, res) => {
     try {
@@ -158,11 +156,3 @@ try {
 <<<<<<< HEAD
 // Start the server
 
-=======
-
-//Delete a todo
-const PORT = 5000;
-app.listen(PORT, ()=>{
-    console.log("server has started on port", PORT);
-})
->>>>>>> parent of 7fd31b3 (all endpoints test success ready to be used)
