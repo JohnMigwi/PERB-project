@@ -73,8 +73,6 @@ app.delete('/todo/:id', async(req,res) =>{
     }
 })
 
-
-
 const PORT = 5000;
 app.listen(PORT, ()=>{
     console.log("server has started on port", PORT);
