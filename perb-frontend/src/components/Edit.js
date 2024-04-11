@@ -35,7 +35,7 @@ function Edit({todo}) {
 <button type="button" class="btn btn-warning" data-toggle="modal" data-target={`#id${todo.todo_id}`}>
   Edit
 </button>
-<div class="modal" id={`id${todo.todo_id}`}>
+<div class="modal" id={`id${todo.todo_id}`}  onClick={() => setDescription(todo.description)} >
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -47,7 +47,7 @@ function Edit({todo}) {
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-warning" data-dismiss="modal" onClick={ e => saveDescription(e)}>Save</button>
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal" onClick={()=>setDescription(todo.description)}>Cancel</button>
       </div>
 
     </div>
